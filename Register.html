@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Ibraheem Sule">
+    <link rel="stylesheet" type="text/css" href="proj3.css">
+    <script>
+        function takevalue() {
+            var fname = document.getElementById("fname").value
+            var City = document.getElementById("city").value
+            var state = document.getElementById("state").value
+            var Zcode = document.getElementById("Zip code").value
+            var Skills = document.getElementById("Skills").value
+            var Mail = document.getElementById("mail").value
+            var Phone = document.getElementById("phone number").value
+            var password = document.getElementById("password").value
+            localStorage.setItem("fname");
+	        localStorage.setItem("city");
+	        localStorage.setItem("state");
+	        localStorage.setItem("Zip code");
+	        localStorage.setItem("Skills");
+	        localStorage.setItem("mail");
+            localStorage.setItem("phone number");
+            localStorage.setItem("password");
+        }
+    </script>
+</head>
+<body>
+    <nav id="logo">
+        <h1>MOSKI-LI</h1>
+    </nav>   
+    <p class="first">Welcome, this is a website to link people that need specific service and people who render the service.</p>
+    <div id="form">
+        <form onsubmit="takevalue()">
+			<h2>Register as a Member</h2>
+			<label >full Name:</label>
+			<input type="text" id="fname" ><br><p></p>
+		 	<label>City:</label>
+		 	<input type="text" id="city"><br><p></p>
+		 	<label>State:</label>
+		 	<input type="class" id="state"><br><p></p>
+		 	<label>Zip code:</label>
+		 	<input type="number" id="Zip code"><br><p></p>
+		 	<label>Skills:</label>
+		 	<input type="text" id="Skills"><br><p></p>
+		 	<label>e-mail:</label>
+            <input type="email" id="mail"><br><p></p>
+            <label>gender:</label>
+		 	<input type="radio" name="gender"> Male
+		 	<input type="radio" name="gender"> Female <br><p></p>
+		 	<label>phone number:</label>
+            <input type="number" id="phone number"><br><p></p>
+            <label>password:</label>
+            <input type="text" id="password"><br><p></p>
+            <input type="submit"><br><p><a href="job.html">continue</a></p>
+        </form>
+</body>
+</html>

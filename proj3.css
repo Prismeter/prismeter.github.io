@@ -1,0 +1,38 @@
+body{
+	background-color: rgba(240, 108, 108, 0.133);	
+    background-size: cover;
+}
+
+#logo{
+	background-color: rgb(25,76,89);
+	color: red;
+	text-align: center;
+	border-style: ridge;
+}
+ 
+h1{
+	color: blue;
+	text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.first{
+ 	font-style: italic;	
+ 	font-weight: bold;
+    font-size: 150%;
+    text-align: center
+}
+
+ol{
+    font-style: inherit;	
+    font-weight: unset;
+   font-size: 200%;
+   text-align: center;
+}
+
